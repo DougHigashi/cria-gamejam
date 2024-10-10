@@ -1,5 +1,6 @@
-1. Top Down Camera
+1. Resident Evil style camere
 2. Phone call system (for when the psychosis kicks in)
 3. Weapon and ammunition spawn system
 4. Enemies system
 5. Shaders for psychosis effect
+6. level design OK

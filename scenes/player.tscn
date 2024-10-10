@@ -14,6 +14,7 @@ material = SubResource("StandardMaterial3D_wy8fe")
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_agyg5"]
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
+wall_min_slide_angle = 0.0
 script = ExtResource("1_nc1se")
 
 [node name="Pivot" type="Node3D" parent="."]
@@ -26,6 +27,12 @@ mesh = SubResource("CapsuleMesh_ueyfd")
 transform = Transform3D(0.33, 0, 0, 0, 0.33, 0, 0, 0, 0.33, 0, 1.5, 0.5)
 mesh = SubResource("BoxMesh_kt7j5")
 skeleton = NodePath("../MeshInstance3D")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Pivot"]
+transform = Transform3D(-1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, -1, 0, 2, 0)
+light_color = Color(1, 1, 0.803922, 1)
+spot_range = 20.5354
+spot_angle = 64.5554
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
