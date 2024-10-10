@@ -6,7 +6,6 @@ extends CharacterBody3D
 @export var speed := 3
 @export var sprint_multiplier := 2
 @export var rotate_speed := 0.05
-@export var gravity := -300
 var rot_dir = 0
 
 
@@ -56,3 +55,11 @@ func get_sprint():
 
 func move_player(input_vector):
 	velocity = input_vector.rotated(Vector3(0, 1, 0), rot_dir * rotate_speed) * speed
+
+
+func enter_trigger(body: Node3D) -> void:
+	pass # Replace with function body.
+
+
+func _on_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.
